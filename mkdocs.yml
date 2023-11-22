@@ -1,0 +1,8 @@
+site_name: Saqil Tzij: Proyecto de TAN de lenguas mayas
+nav: 
+  - Home: home.md
+  - About: about.md
+  - JW Crawler: jw.md
+theme:
+  name: mkdocs
+  locale: es
