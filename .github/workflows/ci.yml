@@ -4,6 +4,7 @@ on:
     branches:
       - website
   workflow_run:
+    workflows: [ci]
     branches: [website]
 permissions:
   contents: write
