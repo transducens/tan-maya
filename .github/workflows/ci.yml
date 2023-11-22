@@ -3,11 +3,8 @@ on:
   push:
     branches:
       - website
-pull_request:
-  branches:
-    - "webpage" 
-  paths:
-    - ".github/workflows/ci.yaml"
+  workflow_run:
+    branches: [website]
 permissions:
   contents: write
 jobs:
