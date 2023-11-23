@@ -1,6 +1,6 @@
 site_name: Saqil Tzij
 nav: 
-  - Home: home.md
+  - Home: index.md
   - About: about.md
   - JW Crawler: jw.md
 theme:
