@@ -1,0 +1,15 @@
+* {
+  font-family: "linux libertine";
+}
+
+.wm-article-link.wm-page-toc-text {
+  font-size: 15px ;
+}
+
+.wm-toc-li.wm-toc-lev1.wm-current.wm-page-toc-opener.wm-page-toc-open {
+  font-size: 20px ;
+}
+
+p {
+  font-size: 20px ;
+}

@@ -1,3 +1,10 @@
 site_name: Saqil Tzij
+nav: 
+  - Inicio: index.md
+  - Textos paralelos: textos.md
+  - JW: jw.md
+  - Sobre el proyecto: about.md
 theme:
-  name: mkdocs
+  name: windmill
+extra_css:
+  - style.css
