@@ -7,6 +7,7 @@ nav:
   - Sobre el proyecto: about.md
 theme:
   name: windmill
+  language: es
 extra_css:
   - style.css
 markdown_extensions:
