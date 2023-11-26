@@ -1,10 +1,13 @@
 site_name: Saqil Tzij
 nav: 
   - Inicio: index.md
-  - Textos paralelos: textos.md
-  - JW: jw.md
+  - Vocabularios y textos paralelos: textos.md
+  - JW Crawler: jw.md
+  - FLORES-Mayas: flores.md
   - Sobre el proyecto: about.md
 theme:
   name: windmill
 extra_css:
   - style.css
+markdown_extensions:
+  - footnotes
