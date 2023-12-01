@@ -1,0 +1,6 @@
+cmb/
+slurm*
+checkpoint_lang_iter/
+*.bpe.*
+data.*
+
