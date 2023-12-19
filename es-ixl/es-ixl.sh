@@ -30,7 +30,7 @@ do
  		apply_truecaser_test $lang 
  		apply_bpe_test $lang
  	fi
- done
+done
 
 # Train model
 train_model cmb

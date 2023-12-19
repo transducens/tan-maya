@@ -105,6 +105,7 @@ do
     if [ -e $home/corpora_mayas/$lang/dataframes/vocabulario.csv ]
     then
         mkdir -p cmb/test/$lang
+	mkdir -p cmb/dev/$lang
         shuf $home/corpora_mayas/$lang/dataframes/vocabulario.csv > cmb/test/$lang/vocabulario.shuf
         
         vocab="cmb/test/$lang/vocabulario.shuf"
@@ -116,8 +117,11 @@ do
         if [ $(wc -l < $vocab) -ge 2000 ]
 	then
 		echo "$lang dizque tiene más de 2000 entradas: $(wc -l < $vocab)"
-            tail +1001 $vocab | head -1000 | cut -f4 >> cmb/dev/data.cmb
-            tail +1001 $vocab | head -1000 | cut -f5 >> cmb/dev/data.es
+	    
+            tail +1001 $vocab | head -1000 | cut -f4 > cmb/dev/$lang/data.$lang
+            tail +1001 $vocab | head -1000 | cut -f5 > cmb/dev/$lang/data.es
+            cat cmb/dev/$lang/data.$lang >> cmb/dev/data.cmb
+            cat cmb/dev/$lang/data.es >> cmb/dev/data.es
 
             tail +2001 $vocab | cut -f4 | sed -e 's/$/ #'$lang'#/' >> cmb/train/data.cmb
             tail +2001 $vocab | cut -f5 >> cmb/train/data.es
@@ -125,8 +129,10 @@ do
         # else, take the remaining lines and put them all in dev
 	else
 	    echo "$lang dizque tiene menos de 2000 entradas: $(wc -l < $vocab)"	
-            tail +1000 $vocab | cut -f4 >> cmb/dev/data.cmb
-            tail +1000 $vocab | cut -f5 >> cmb/dev/data.es
+            tail +1000 $vocab | cut -f4 > cmb/dev/$lang/data.$lang
+            tail +1000 $vocab | cut -f5 > cmb/dev/$lang/data.es
+	    cat cmb/dev/$lang/data.$lang >> cmb/dev/data.cmb
+	    cat cmb/dev/$lang/data.es >> cmb/dev/data.es
 
         fi
     fi
@@ -190,7 +196,7 @@ sed -i 's/ #.*#$//' cmb/train/data.cmb
 
 # Remove trailing period (.)
 
-for dir in train dev
+for dir in train
 do
     for file in cmb/$dir/*
     do
@@ -203,9 +209,21 @@ for dir in cmb/test/*
 do
     for file in $dir/*
     do
-        cat $file | sed -e "s/\.$//" > $file.temp 
+        cat $file | sed -e "s/\.//" > $file.temp 
         mv $file.temp $file
     done
+done
+
+for dir in cmb/dev/*
+do
+    if [ -d $dir ]
+    then
+	    for file in $dir/*
+	    do
+	        cat $file | sed -e "s/\.//" > $file.temp 
+	        mv $file.temp $file
+	    done
+    fi
 done
 
 # mv cmb/train/train.maya-es.bpe cmb/train/train.maya-es

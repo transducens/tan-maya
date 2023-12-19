@@ -13,7 +13,7 @@ for lang in langs:
     checkpoints = os.listdir(f"checkpoint_lang_iter/{lang}")
     for checkpoint in checkpoints:
         try:
-            with open(f"checkpoint_lang_iter/{lang}/{checkpoint}/report") as f:
+            with open(f"checkpoint_lang_iter/{lang}/{checkpoint}/report.dev") as f:
                 try:
                     report = json.loads(f.read())
                 except JSONDecodeError:
@@ -30,4 +30,5 @@ for lang in langs:
 
     langs_best[lang] = best
 
-ic(langs_best)
+for lang in langs:
+    print(f"#{lang}# {langs_best[lang]['best_bleu_checkpoint']}")

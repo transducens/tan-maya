@@ -116,17 +116,22 @@ do
         if [ $(wc -l < $vocab) -ge 2000 ]
 	then
 		echo "$lang dizque tiene más de 2000 entradas: $(wc -l < $vocab)"
-            tail +1001 $vocab | head -1000 | cut -f4 >> cmb/dev/data.cmb
-            tail +1001 $vocab | head -1000 | cut -f5 | sed -e 's/$/ #'$lang'#/' >> cmb/dev/data.es
+	    
+            tail +1001 $vocab | head -1000 | cut -f4 > cmb/dev/$lang/data.$lang
+            tail +1001 $vocab | head -1000 | cut -f5 > cmb/dev/$lang/data.es
+            cat cmb/dev/$lang/data.$lang >> cmb/dev/data.cmb
+            cat cmb/dev/$lang/data.es >> cmb/dev/data.es
 
             tail +2001 $vocab | cut -f4 | sed -e 's/$/ #'$lang'#/' >> cmb/train/data.cmb
-            tail +2001 $vocab | cut -f5 | sed -e 's/$/ #'$lang'#/' >> cmb/train/data.es
+            tail +2001 $vocab | cut -f5 >> cmb/train/data.es
 
         # else, take the remaining lines and put them all in dev
 	else
 	    echo "$lang dizque tiene menos de 2000 entradas: $(wc -l < $vocab)"	
-            tail +1000 $vocab | cut -f4 >> cmb/dev/data.cmb
-            tail +1000 $vocab | cut -f5 | sed -e 's/$/ #'$lang'#/' >> cmb/dev/data.es
+            tail +1000 $vocab | cut -f4 > cmb/dev/$lang/data.$lang
+            tail +1000 $vocab | cut -f5 > cmb/dev/$lang/data.es
+	    cat cmb/dev/$lang/data.$lang >> cmb/dev/data.cmb
+	    cat cmb/dev/$lang/data.es >> cmb/dev/data.es
 
         fi
     fi

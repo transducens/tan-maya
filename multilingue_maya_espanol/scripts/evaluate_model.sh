@@ -8,7 +8,8 @@ function translate_test() {
 	lang=$1
 	target_dir=$2
 	checkpoint=$3
-	test_dir=cmb/test/$lang
+    fraction=$4
+	test_dir=cmb/$fraction/$lang
 	
 	if [ -e $test_dir ]
 	
@@ -31,7 +32,8 @@ function translate_test() {
 function rebuild_output () {
 	lang=$1
 	target_dir=$2
-	test_dir=cmb/test/$lang
+    fraction=$3
+	test_dir=cmb/$fraction/$lang
 	
 	if [ -e $test_dir ]
 
@@ -55,7 +57,8 @@ function rebuild_output () {
 function report () {
 	lang=$1
 	target_dir=$2
-	test_dir=cmb/test/$lang
+    fraction=$3
+	test_dir=cmb/$fraction/$lang
 
 	if [ -e $test_dir ]
 	then
@@ -66,6 +69,6 @@ function report () {
 
 		cat $target_dir/data.output-train.detokenized | \
 		sacrebleu $test_dir/data.es \
-		--width 3 -l $lang-es --metrics bleu chrf  > $target_dir/report
+		--width 3 -l $lang-es --metrics bleu chrf > $target_dir/report.$fraction
 	fi
 }

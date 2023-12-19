@@ -1,0 +1,419 @@
++--------------------------------------------+-------------------+---------------------------+
+|                                            |   cosine_distance |   jensen_shannon_distance |
+|--------------------------------------------+-------------------+---------------------------|
+| JACKET                                     |       0.999877    |              0.832184     |
+| CARDIGAN                                   |       0.999665    |              0.831652     |
+| T-SHIRT                                    |       1.03313e-09 |              0.00406671   |
+| SWEATER                                    |       0.999088    |              0.830374     |
+| WINDBREAKER                                |       1           |              0.832555     |
+| OVERALLS                                   |       0.999665    |              0.831652     |
+| PONCHO                                     |       0.654796    |              0.607705     |
+| JEANS                                      |       3.45834e-13 |              0.00053683   |
+| OVERCOAT                                   |       1           |              0.832555     |
+| SHAWL                                      |       1           |              0.832555     |
+| PYJAMAS (US:PAJAMAS)                       |       0           |              0.000107938  |
+| SKIRT                                      |       1           |              0.832555     |
+| RIBBON                                     |       0.999088    |              0.830364     |
+| TRACK SUIT                                 |       0.999771    |              0.832156     |
+| HOOD                                       |       0.0557125   |              0.294739     |
+| BOW TIE                                    |       0           |              7.75023e-30  |
+| RING                                       |       0           |              8.20324e-05  |
+| CUFFLINKS                                  |       1           |              0.832555     |
+| MASCARA                                    |       0.99871     |              0.828549     |
+| EYE SHADOW                                 |       1           |              0.832555     |
+| TAPE MEASURE                               |       8.17288e-09 |              0.00811887   |
+| BRACES (US:SUSPENDERS)                     |       0.48248     |              0.467857     |
+| SOCKS                                      |       0.294204    |              0.485039     |
+| SLIPPERS                                   |       9.47019e-06 |              0.064911     |
+| HEEL                                       |       0.999998    |              0.832545     |
+| PANTIES                                    |       0.000217933 |              0.141788     |
+| BRASSIERE                                  |       0.999988    |              0.832523     |
+| ZIP FASTENER (US:ZIPPER)                   |       1           |              0.832555     |
+| GLASSES                                    |       0           |              2.80263e-05  |
+| PANTS (US:SHORTS)                          |       0           |              1.34798e-11  |
+| SWIMSUIT                                   |       0.0206975   |              0.28046      |
+| SPORTS SHOES                               |       1           |              0.832555     |
+| FOLDER                                     |       0.999665    |              0.831648     |
+| VALISE                                     |       0.0758954   |              0.440778     |
+| BAG                                        |       1           |              0.832555     |
+| SUITCASE                                   |       0.00613987  |              0.27314      |
+| HANDBAG                                    |       2.34257e-14 |              0.000230236  |
+| RUCKSACK                                   |       1           |              0.832555     |
+| DISH RACK                                  |       0.283094    |              0.531797     |
+| DISHWASHER                                 |       5.03401e-05 |              0.0993729    |
+| CUPBOARD                                   |       0.974124    |              0.790057     |
+| TAP (US:FAUCET)                            |       1           |              0.832555     |
+| SINK                                       |       1           |              0.832554     |
+| COOKER (STOVE)                             |       0.748261    |              0.682859     |
+| REFRIGERATOR                               |       0           |              2.15949e-18  |
+| POT                                        |       1.17006e-09 |              0.00464998   |
+| STRAW                                      |       1           |              0.832555     |
+| COASTER                                    |       0           |              3.99737e-17  |
+| THIN CRUSTED BREAD                         |       1.37203e-06 |              0.0477658    |
+| FRENCH LOAsus                              |       0.999998    |              0.832505     |
+| CROISSANT                                  |       3.07209e-06 |              0.0292867    |
+| TART                                       |       0           |              3.66441e-11  |
+| SANDWICH                                   |       1           |              0.832555     |
+| POPCORN                                    |       1           |              0.832555     |
+| SMALL BOTTLE                               |       6.32827e-15 |              0.000197504  |
+| SCALES                                     |       0.993262    |              0.820439     |
+| GAS CYLINDER                               |       0.000335946 |              0.14406      |
+| BUCKET                                     |       1           |              0.832555     |
+| BABY'S BOTTLE                              |       0           |              2.42127e-06  |
+| LIGHTER                                    |       4.06434e-07 |              0.0265718    |
+| EARPHONES                                  |       0.00123749  |              0.130467     |
+| BAFFLE                                     |       1           |              0.832555     |
+| RADIO                                      |       1.01609e-07 |              0.0132964    |
+| CHANDELIER                                 |       5.52933e-05 |              0.122621     |
+| BLANKET                                    |       1           |              0.832553     |
+| BEDSPREAD                                  |       0           |              3.36503e-06  |
+| CHEST OF DRAWERS                           |       0.950759    |              0.781722     |
+| HANGER                                     |       0.90064     |              0.70802      |
+| WASHBASIN                                  |       0.999999    |              0.832548     |
+| TANK                                       |       1           |              0.832554     |
+| SHOWER                                     |       0           |              1.24325e-09  |
+| BATHTUB                                    |       0           |              2.1939e-06   |
+| DRYER                                      |       0.468607    |              0.634185     |
+| BULB                                       |       0.156774    |              0.483656     |
+| STOOL                                      |       1           |              0.832555     |
+| GLASS                                      |       0.112878    |              0.419238     |
+| RUBBISH BIN (US:TRASH CAN)                 |       1           |              0.832555     |
+| MATCH                                      |       0.0179815   |              0.290831     |
+| FRAME FOR DRYING CLOTHES                   |       3.45723e-13 |              0.000536829  |
+| LAWN MOWER                                 |       1           |              0.832554     |
+| PEEPHOLE                                   |       0           |              1.12497e-12  |
+| DOOR KNOCKER                               |       0.293476    |              0.480842     |
+| DOORKNOB                                   |       0.950407    |              0.777772     |
+| PUSHCHAIR (US:STROLLER)                    |       1           |              0.832555     |
+| DECKCHAIR                                  |       0.999877    |              0.8322       |
+| SPANNER (US:WRENCH)                        |       0.95029     |              0.77635      |
+| MONKEY SPANNER (US:MONKEY WRENCH)          |       0.95029     |              0.77635      |
+| CAR                                        |       1           |              0.832555     |
+| NUMBER PLATE (US:LICENSE PLATE)            |       0.999088    |              0.830368     |
+| BUMPER (US:FENDER)                         |       0.322198    |              0.585162     |
+| HEADLIGHT                                  |       1           |              0.832554     |
+| WINDSREEN                                  |       0.112878    |              0.419283     |
+| BONNET (US:HOOD)                           |       0.00123713  |              0.129844     |
+| LUGGAGE RACK                               |       0           |              2.53761e-12  |
+| BOOT (US:TRUNK)                            |       0.999999    |              0.832551     |
+| BRAKE LIGHT                                |       4.77396e-14 |              0.0003644    |
+| TAIL LIGHT                                 |       0.866077    |              0.717919     |
+| MUDGUARD (US:FENDER)                       |       0.342243    |              0.628262     |
+| TYRE (US:TIRE)                             |       1.03062e-09 |              0.00397995   |
+| WHEEL                                      |       1.03062e-09 |              0.00397995   |
+| VAN                                        |       1           |              0.832555     |
+| JEEP                                       |       1.0103e-14  |              0.000414773  |
+| WATER WAGON                                |       0.298403    |              0.495132     |
+| BULLDOZER                                  |       1           |              0.832555     |
+| CONCRETE MIXER TRUCK                       |       0.981671    |              0.804808     |
+| DUMP TRUCK                                 |       1.40434e-05 |              0.0872611    |
+| BUS                                        |       1           |              0.832554     |
+| MOTOR COACH (US:BUS)                       |       0.999994    |              0.832531     |
+| PETROL TANK                                |       0.950352    |              0.777152     |
+| SILENCER                                   |       1           |              0.832555     |
+| EXHAUST                                    |       1           |              0.832555     |
+| MINIBUS                                    |       0.993266    |              0.821482     |
+| SCOOTER                                    |       0.252033    |              0.583379     |
+| PLATFORM                                   |       1           |              0.832555     |
+| RAIL                                       |       0.194528    |              0.521038     |
+| BOOKING OFFICE                             |       1           |              0.832555     |
+| SLEEPING CAR                               |       0           |              4.9789e-06   |
+| PAVEMENT (US:SIDEWALK)                     |       1           |              0.832554     |
+| BUS STOP                                   |       4.15764e-07 |              0.0177722    |
+| NOTE (US:BILL)                             |       0.999088    |              0.83037      |
+| LIFT (US:ELEVATOR)                         |       1.88757e-11 |              0.00145925   |
+| ESCALATOR                                  |       0           |              3.62486e-05  |
+| PEN                                        |       0           |              1.14148e-06  |
+| PROPELLING PENCIL (US:MECHANICAL PENCIL)   |       7.60988e-09 |              0.00652795   |
+| BALL-POINT PEN                             |       4.15764e-07 |              0.0177722    |
+| PENCIL SHARPENER                           |       2.22045e-16 |              9.28009e-10  |
+| STAPLE                                     |       0.205057    |              0.320784     |
+| BLACKBOARD                                 |       0.997524    |              0.827561     |
+| COMPUTER                                   |       0.771779    |              0.591891     |
+| RUBBER BAND                                |       0.865888    |              0.709972     |
+| STAMP                                      |       0.294639    |              0.491269     |
+| HANDLE                                     |       1           |              0.832555     |
+| TENT                                       |       0.388769    |              0.609886     |
+| KITE                                       |       0.999088    |              0.830368     |
+| SWIMMING POOL                              |       0.997521    |              0.827338     |
+| LAWN                                       |       1           |              0.832554     |
+| STREET LAMP                                |       5.76834e-05 |              0.0893725    |
+| RUBBISH BIN (TRASH CAN)                    |       0.993262    |              0.820729     |
+| SLIDE                                      |       0.0431074   |              0.48548      |
+| BENCH                                      |       1           |              0.832555     |
+| SHOP WINDOW                                |       0.0126325   |              0.289352     |
+| HARMONICA                                  |       1           |              0.832555     |
+| SPONGE CAKE                                |       0           |              6.66717e-08  |
+| STONE (US:PIT)                             |       1           |              0.832555     |
+| PACKET                                     |       1           |              0.832555     |
+| SLICE OF CHEESE                            |       0.673656    |              0.644882     |
+| PLASTIC WRAP                               |       1           |              0.832555     |
+| DEMIJOHN                                   |       6.91447e-13 |              0.000760773  |
+| CIGARETTE BUTT                             |       1.39478e-10 |              0.00242075   |
+| SCREW-ON CAP                               |       0.993262    |              0.820459     |
+| CAP                                        |       0.999998    |              0.832545     |
+| CAN                                        |       1           |              0.832555     |
+| AIRTIGHT CAN                               |       0           |              1.67669e-10  |
+| COLANDER                                   |       0.993262    |              0.820388     |
+| LADLE                                      |       0.00919871  |              0.222678     |
+| TURNER                                     |       3.45723e-13 |              0.000537848  |
+| FILTER                                     |       0.0734546   |              0.493559     |
+| TEA BAG                                    |       0.999665    |              0.831648     |
+| KNIFEGRINDER                               |       0           |              3.61714e-06  |
+| PAELLA PAN                                 |       0.999955    |              0.832405     |
+| TRAY                                       |       0.336375    |              0.544519     |
+| PLAYPEN                                    |       1           |              0.832555     |
+| BERTH                                      |       0.347108    |              0.295305     |
+| SHOPPING CART                              |       1           |              0.832555     |
+| BASKET                                     |       2.22045e-16 |              1.77223e-12  |
+| WASHER                                     |       9.21535e-06 |              0.0506289    |
+| BOBIN                                      |       5.52508e-05 |              0.12237      |
+| NEEDLE                                     |       6.32827e-15 |              0.000200022  |
+| CUSHION                                    |       1.88757e-11 |              0.00145925   |
+| LACE CURTAIN                               |       0.865894    |              0.711832     |
+| Q-TIPS                                     |       0.0102598   |              0.241768     |
+| PLASTER                                    |       3.58935e-13 |              0.000626563  |
+| ATTIC                                      |       1           |              0.832555     |
+| TOOTHBRUSH                                 |       1.26787e-13 |              0.000491882  |
+| WARDROBE                                   |       0.551656    |              0.554845     |
+| BIDET                                      |       0.00610937  |              0.269622     |
+| CORRUGATED IRON                            |       0.0614921   |              0.322019     |
+| PEAK                                       |       0.0254199   |              0.311508     |
+| ROLL NECK (US: TURTLENECK)                 |       0           |              4.07146e-20  |
+| V-NECK                                     |       5.82065e-06 |              0.0662472    |
+| POLO COLLAR                                |       0           |              1.2539e-19   |
+| RAINCOAT                                   |       0.191735    |              0.446317     |
+| BOLERO                                     |       0.964839    |              0.79799      |
+| SPORTSHIRT                                 |       1.03313e-09 |              0.00407029   |
+| ROUND NECK                                 |       0           |              3.72607e-20  |
+| SMOCK                                      |       1           |              0.832555     |
+| DRESSING GOWN                              |       0           |              3.6172e-06   |
+| FRINGE                                     |       0           |              2.33046e-11  |
+| MITTEN                                     |       5.54758e-06 |              0.0360827    |
+| POCHETTE                                   |       0.999976    |              0.832441     |
+| CULOTTE SKIRT                              |       2.91034e-06 |              0.0469388    |
+| SANDAL                                     |       0.999665    |              0.831686     |
+| ATHLETIC SHIRT                             |       0.748251    |              0.682377     |
+| PANTY HOSE                                 |       1           |              0.832555     |
+| APRON                                      |       1.22753e-06 |              0.0136925    |
+| CONTACT LENS                               |       0           |              1.46079e-05  |
+| POWDER BOX                                 |       2.26992e-05 |              0.0482202    |
+| LIPSTICK                                   |       0.992913    |              0.81898      |
+| ROLLERS                                    |       2.26992e-05 |              0.0482223    |
+| CHALK                                      |       0.950723    |              0.777897     |
+| DIARY                                      |       0.0817084   |              0.485178     |
+| FILING CABINET                             |       0.00369752  |              0.217479     |
+| BLOCK                                      |       1           |              0.832555     |
+| PAD                                        |       0           |              0.000118666  |
+| CHEQUEBOOK (US:CHECKBOOK)                  |       0           |              2.99739e-07  |
+| TAPE RECORDER                              |       0.202935    |              0.483796     |
+| PHOTOCOPIER                                |       0.961146    |              0.767061     |
+| SWING                                      |       3.03083e-06 |              0.0285198    |
+| LEAPFROG                                   |       0           |              1.1189e-55   |
+| DART                                       |       2.07882e-06 |              0.0396936    |
+| SKIPPING                                   |       1           |              0.832555     |
+| BLINDMAN'S BUFF                            |       2.33924e-13 |              0.000728071  |
+| CUP AND BALL                               |       0.00144055  |              0.189119     |
+| SKATEBOARD                                 |       0           |              6.13553e-40  |
+| MEGAPHONE                                  |       0.187797    |              0.558233     |
+| TOP                                        |       0.538476    |              0.512222     |
+| STUFFFED TOY                               |       4.68514e-14 |              0.000334019  |
+| PARACHUTE                                  |       0           |              5.34543e-05  |
+| FRISBEE                                    |       0           |              4.44388e-17  |
+| CHAIR LIFT                                 |       0           |              8.07125e-07  |
+| GOAL                                       |       1.88765e-11 |              0.00146416   |
+| MERRY-GO-ROUND                             |       0           |              3.21829e-64  |
+| WALKMAN                                    |       1           |              0.832555     |
+| BINOCULARS                                 |       0           |              8.33558e-06  |
+| CONVERTIBLE                                |       0.953415    |              0.790699     |
+| AIR-BAG                                    |       4.21108e-13 |              0.00097681   |
+| ROAD ROLLER                                |       1           |              0.832555     |
+| ROAD                                       |       0           |              2.80899e-08  |
+| CENTRAL RESERVATION (US:MEDIAN STRIP)      |       1           |              0.832555     |
+| PEDESTRIAN BRIDGE (US:PEDESTRIAN OVERPASS) |       0.993254    |              0.819884     |
+| SADDLE                                     |       1           |              0.832555     |
+| PEDAL                                      |       0.654742    |              0.60451      |
+| DAM                                        |       1           |              0.832554     |
+| RESTAURANT CAR                             |       1.51005e-10 |              0.00412733   |
+| LOUDSPEAKER                                |       0.597264    |              0.724029     |
+| HORN                                       |       0.590106    |              0.483257     |
+| SCREEN DOOR                                |       1.12997e-11 |              0.00166781   |
+| DIRECTORY                                  |       0.950391    |              0.781963     |
+| LUMP OF SUGAR                              |       0           |              5.52333e-08  |
+| ROUNDABOUT (US:ROTARY)                     |       1           |              0.832555     |
+| TOOTHPASTE                                 |       0           |              2.58887e-05  |
+| BLIND                                      |       1.67573e-10 |              0.0037954    |
+| FLOWER POT                                 |       0.88204     |              0.744087     |
+| FLOWER STAND                               |       0.999088    |              0.830383     |
+| AWNING                                     |       0.999088    |              0.830371     |
+| BATTERY                                    |       0.292893    |              0.464501     |
+| TROLLEY (US:PUSHCART)                      |       1           |              0.832555     |
+| SHOPPING BASKET                            |       0           |              2.55769e-06  |
+| LEFT-LUGGAGE OFFICE (US:CHECK-ROOM)        |       2.34257e-14 |              0.000230984  |
+| CARRYCOT                                   |       1           |              0.832555     |
+| MATERNITY DRESS                            |       2.55529e-12 |              0.000923136  |
+| STRECHER                                   |       0.0322849   |              0.245278     |
+| STING                                      |       0.00263602  |              0.19498      |
+| FOOD                                       |       1.11022e-16 |              7.2652e-05   |
+| RAISING                                    |       2.22045e-16 |              2.34798e-09  |
+| POST-OFFICE BOX                            |       6.32827e-15 |              0.000197491  |
+| BE                                         |       0.328544    |              0.628628     |
+| SLAP                                       |       1           |              0.832555     |
+| WAITER                                     |       0.999087    |              0.830398     |
+| PIG                                        |       0.865887    |              0.709478     |
+| RESIGNATION                                |       1           |              0.832555     |
+| AVARICE                                    |       1.24555e-09 |              0.00548077   |
+| SHELL                                      |       0.0178274   |              0.283328     |
+| ANGER                                      |       1           |              0.832555     |
+| BAY                                        |       2.39848e-11 |              0.00192253   |
+| STAY                                       |       0.999355    |              0.831368     |
+| BANGS                                      |       0.999999    |              0.832548     |
+| LITTLE FLOWER                              |       0           |              6.21267e-20  |
+| PLUMBER                                    |       1           |              0.832554     |
+| STRANGER                                   |       0.0045477   |              0.150061     |
+| RUBBER                                     |       0           |              4.40834e-05  |
+| BEAUTY                                     |       4.53968e-05 |              0.068048     |
+| GRASS                                      |       0.999668    |              0.831741     |
+| IRON                                       |       2.55451e-12 |              0.000885082  |
+| CONCRETE                                   |       1           |              0.832555     |
+| HOSPITAL                                   |       3.07209e-06 |              0.0292867    |
+| WHIP                                       |       0.999878    |              0.832224     |
+| WEEDS                                      |       1           |              0.832555     |
+| BUTTER                                     |       0.999141    |              0.830885     |
+| ROCKING CHAIR                              |       0.922103    |              0.776913     |
+| CHEEK                                      |       0.999877    |              0.832184     |
+| MONKEY                                     |       0.950275    |              0.772408     |
+| MOSQUITO                                   |       0           |              5.98357e-06  |
+| JACKKNIFE                                  |       2.22045e-16 |              3.43557e-10  |
+| WORKER                                     |       0.865909    |              0.710974     |
+| PARCEL (US:PACKAGE)                        |       0.999665    |              0.831648     |
+| UNEMPLOYED MAN                             |       1           |              0.832555     |
+| UNEMPLOYMENT                               |       1           |              0.832555     |
+| SEAFRONT                                   |       1           |              0.832555     |
+| POTATO                                     |       0           |              1.16109e-108 |
+| SPONSOR                                    |       0.778537    |              0.756779     |
+| TOLL                                       |       4.30994e-07 |              0.0200319    |
+| LAZINESS                                   |       0           |              1.51696e-18  |
+| LITTLE STONE                               |       0.0375142   |              0.300186     |
+| BANANA                                     |       1           |              0.832555     |
+| POLICEMAN                                  |       1           |              0.832554     |
+| DUST                                       |       0           |              1.10649e-12  |
+| SMALL VILLAGE                              |       5.62676e-08 |              0.0107814    |
+| KEROSENE                                   |       0.44255     |              0.658366     |
+| PICKPOCKET                                 |       0.865887    |              0.709478     |
+| FLASH                                      |       7.61533e-09 |              0.00656165   |
+| REPAIRING                                  |       0.0626531   |              0.344793     |
+| SLIP                                       |       4.1842e-10  |              0.00416708   |
+| KIDNAPPER                                  |       0.0263907   |              0.33514      |
+| HISSING                                    |       5.62679e-08 |              0.0107961    |
+| BRIBERY                                    |       1           |              0.832555     |
+| TIDBITS                                    |       1           |              0.832555     |
+| SMALL SHOP (US:SMALL STORE)                |       0.010951    |              0.346452     |
+| SHOOTING                                   |       4.68514e-14 |              0.000325604  |
+| BREEZE                                     |       0.0428664   |              0.407009     |
+| GLANCE                                     |       1           |              0.832555     |
+| SHARP                                      |       0           |              2.03689e-09  |
+| BITTER                                     |       2.22045e-16 |              0            |
+| YELLOWISH                                  |       0.654742    |              0.60451      |
+| AMAZING                                    |       0.0093602   |              0.231865     |
+| BLUISH                                     |       2.22045e-16 |              0            |
+| BRILLIANT                                  |       0.950275    |              0.772392     |
+| AVARICIOUS                                 |       1.26443e-09 |              0.00567168   |
+| AS SOON AS                                 |       0           |              1.26798e-08  |
+| IN MY HEART                                |       0.000246253 |              0.152364     |
+| ANGRY                                      |       0.981687    |              0.804946     |
+| SENSITIVE TO THE COLD                      |       3.93873e-07 |              0.0285064    |
+| GREYISH (US:GRAYISH)                       |       1.10608e-09 |              0.00492453   |
+| SLOW                                       |       0.999999    |              0.832551     |
+| WEAK                                       |       0.0614921   |              0.322019     |
+| STANDING                                   |       0           |              2.67272e-05  |
+| DUSTY                                      |       0.999992    |              0.832518     |
+| COLD                                       |       2.81338e-08 |              0.00762671   |
+| BROKEN                                     |       0           |              0            |
+| COARSE                                     |       0.999983    |              0.832494     |
+| ARROGANT                                   |       0.0922406   |              0.168924     |
+| SOLITARY                                   |       1.03058e-09 |              0.00396661   |
+| TRANSITORY                                 |       0.868176    |              0.738873     |
+| ANNOY                                      |       1           |              0.832555     |
+| DESORIENT                                  |       1           |              0.832555     |
+| DRENCH                                     |       0.999955    |              0.832405     |
+| ESCAPE                                     |       1           |              0.832555     |
+| FILL (TOOTH)                               |       0           |              5.9638e-06   |
+| KNEEL                                      |       0.00920905  |              0.226668     |
+| PAMPER                                     |       0.999957    |              0.8324       |
+| SELL AT A BARGAIN PRICE                    |       0           |              2.67272e-05  |
+| SHAKE                                      |       1           |              0.832555     |
+| SHOOT                                      |       0           |              1.21362e-09  |
+| TAKE A SHORT CUT                           |       3.45723e-13 |              0.000536829  |
+| TAKE OFF                                   |       1           |              0.832555     |
+| THROW                                      |       1           |              0.832555     |
+| TURN AROUND                                |       1           |              0.832555     |
+| TURN                                       |       0           |              2.00058e-09  |
+| UNDRESS                                    |       0           |              2.19391e-06  |
+| UNPACK                                     |       1           |              0.832554     |
+| UPSET                                      |       0.0263907   |              0.33514      |
+| WHISTLE                                    |       0.999876    |              0.832183     |
+| CHEAT                                      |       1           |              0.832555     |
+| PATROL CAR                                 |       0.999983    |              0.832494     |
+| BEER                                       |       3.33067e-15 |              0.000139645  |
+| BE UNFAITHFULL                             |       1           |              0.832555     |
+| HORNS                                      |       0.999955    |              0.832405     |
+| BUNDLE                                     |       1           |              0.832555     |
+| NAKED                                      |       0.00123708  |              0.129323     |
+| BUNDLED UP                                 |       1           |              0.832555     |
+| THIN (SKINNY)                              |       1.11022e-16 |              7.26521e-05  |
+| DIE                                        |       1           |              0.832555     |
+| HEAD                                       |       1           |              0.832555     |
+| PREGNANT                                   |       0.997521    |              0.827338     |
+| FOOLISHNESS                                |       1           |              0.832555     |
+| SPANIARD                                   |       2.81478e-08 |              0.00790143   |
+| I SUPPOSE                                  |       1           |              0.832553     |
+| FEVERISH                                   |       1           |              0.832555     |
+| SEWER                                      |       0.999877    |              0.832184     |
+| STRETCHER                                  |       0           |              2.63374e-38  |
+| CORD                                       |       1           |              0.832555     |
+| TALKATIVE                                  |       1           |              0.832555     |
+| KNOCK-KNEED                                |       0.65473     |              0.606756     |
+| SKIN                                       |       0           |              5.96364e-06  |
+| RESIN                                      |       0.981352    |              0.804012     |
+| IN VAIN                                    |       1.11022e-16 |              7.34426e-05  |
+| UNFORTUNATE                                |       1           |              0.832555     |
+| CAMPER                                     |       0.355309    |              0.571002     |
+| CELLOPHANE TAPE                            |       0.19452     |              0.520911     |
+| CENTER HALF                                |       0.0133605   |              0.376571     |
+| CHALET                                     |       2.55485e-12 |              0.000893982  |
+| COFFIN                                     |       0           |              3.12591e-05  |
+| COOK                                       |       0.637614    |              0.570237     |
+| COUNTRY MAN                                |       8.31528e-07 |              0.0251263    |
+| INTERVIEW                                  |       0.00123708  |              0.129323     |
+| LANDLADY                                   |       1           |              0.832555     |
+| MOVE IN TOGETHER                           |       1           |              0.832554     |
+| PEANUT                                     |       0.00123749  |              0.130466     |
+| PICK A GIRL UP (COL)                       |       1           |              0.832555     |
+| PLAY BOY (COL)                             |       0           |              1.62108e-05  |
+| SHORT CUT                                  |       0           |              2.49147e-13  |
+| TELEVISION STATION                         |       0.654742    |              0.60451      |
+| THIEF (COL)                                |       0           |              6.04146e-11  |
+| BOAST OF BEING                             |       1           |              0.832555     |
+| BURN THE MIDNIGHT OIL                      |       0.000502814 |              0.135645     |
+| CUCKOLD SOMEBODY                           |       0.0489036   |              0.398569     |
+| GET DRUNK                                  |       0           |              2.92858e-25  |
+| KICK THE BUCKET                            |       0.425515    |              0.683346     |
+| LEAD A FAST LIFE                           |       3.37831e-05 |              0.0962942    |
+| MANAGE TO                                  |       0.293449    |              0.476742     |
+| PAY UP                                     |       6.80929e-05 |              0.0831645    |
+| NUMBER: papa/                              |       0           |              0            |
+| NUMBER: gallina                            |       0           |              0            |
+| NUMBER: grupo                              |       2.22045e-16 |              0            |
+| POSES: el / su                             |       0.0826523   |              0.278316     |
+| ADJECTIVE FORM                             |       2.22045e-16 |              1.59558e-13  |
+| GET ANGRY                                  |       0           |              1.28363e-08  |
+| DRIZZLE                                    |       0.95026     |              0.771339     |
+| PSEUDO-RIFINED                             |       1           |              0.832555     |
+| VULTURE                                    |       0           |              1.26139e-24  |
+| FOOTBALL                                   |       1           |              0.832555     |
+| GOAL SCORER                                |       2.56478e-09 |              0.00891038   |
+| FULLBACK                                   |       1           |              0.832555     |
+| GOALKEEPER                                 |       0.257119    |              0.577458     |
+| CHEEKS                                     |       1.39474e-10 |              0.00240648   |
++--------------------------------------------+-------------------+---------------------------+
