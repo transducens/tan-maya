@@ -14,14 +14,14 @@
   font-size: 15px ;
 }
 
-p {
-  font-size: 20px ;
+p, ul {
+  font-size: 17px ;
 }
 
 .container-fluid.wm-page-content {
   font-size: 10px;
 }
 
-ul {
+/*ul {
   font-size: 20px ;
-}
+}*/
