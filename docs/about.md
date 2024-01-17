@@ -1,15 +1,15 @@
 # Sobre el proyecto
 
 ## Orígenes
-El proyecto de traducción automática de lenguas mayas nace a partir de la visión general de hacer partícipes de las técnicas modernas del campo de la Traducción Automática (_Machine Translation_) a las lenguas de escasos recursos del mundo. Nuestro enfoque particular en las lenguas mayas se debe a la nacionalidad e interés social de uno de los miembros del equipo, quien actualmente trabaja en un doctorado enfocado en esta empresa.
+El proyecto de traducción automática de lenguas mayas nace a partir de la visión general de hacer partícipes de las técnicas modernas del campo de la Traducción Automática (_Machine Translation_) a las lenguas de escasos recursos del mundo. Nuestro enfoque particular en las lenguas mayas se debe a la nacionalidad e interés social de uno de los miembros del equipo, oriundo de Guatemala, quien actualmente trabaja en un doctorado enfocado en esta empresa.
 
 ## Quiénes somos
 El equipo detrás del proyecto es parte del grupo de investigación [Transducens](https://transducens.dlsi.ua.es/). Los miembros involucrados son:
 
 * Andrés Lou Ríos, estudiante de doctorado
-* Felipe Sánchez Martínez, catedrático
-* Víctor M. Sánchez Cartagena, catedrático
-* Juan Antonio Pérez Ortiz, catedrático
+* Felipe Sánchez Martínez, profesor universitario
+* Víctor M. Sánchez Cartagena, profesor universitario
+* Juan Antonio Pérez Ortiz, profesor universitario
 
 ## Qué beneficios aporta la traducción automática
 La existencia de los sistemas de traducción automática neuronal (TAN) que nos proponemos desarrollar ayudará a la integración política, cultural, social y económica de los hablantes de lenguas mayas, brindándoles así acceso a oportunidades laborales, educativas, comerciales y culturales.

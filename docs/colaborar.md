@@ -14,4 +14,6 @@ Necesitamos la experiencia y pericia de dichos expertos para __la traducción de
 Las traducciones realizadas servirán para __el desarrollo y evaluación de sistemas de traducción automática neuronal entre el español y las lenguas mayas__.
 
 ## Cómo entrar en contacto con nosotros
-Escribe a [and_lou@ua.es](mailto:and_lou@ua.es) expresando tu interés y contándonos sobre la(s) lengua(s) maya(s) que dominas.
+Escribe a [and_lou@ua.es](mailto:and_lou@ua.es) expresando tu interés y contándonos sobre la(s) lengua(s) maya(s) que dominas. 
+
+Si quieres aprender más sobre la importancia del proyecto, o sobre el proyecto mismo, [haz clic aquí](about.md).
