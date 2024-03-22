@@ -5,3 +5,6 @@ checkpoint_lang_iter/
 data.*
 model*/
 nllb*/
+bilingual*/
+multilingual*/
+log
