@@ -24,7 +24,7 @@ done
 
 cat data.es.vocab | tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | grep -oP "$exp" | sort > vocab_tokens.es
 cat data.es.jw | tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | grep -oP "$exp" | sort > jw_tokens.es
-python stem.py
+#python stem.py
 cat jw_tokens.es | uniq -c > jw_tokens.unique
 cat vocab_tokens.es | uniq -c >vocab_tokens.unique
 

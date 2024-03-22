@@ -1,4 +1,4 @@
-    moses_scripts=submodules/moses-scripts/scripts
+moses_scripts=submodules/moses-scripts/scripts
 
 normalizer=$moses_scripts/tokenizer/normalize-punctuation.perl
 tokenizer=$moses_scripts/tokenizer/tokenizer.perl
@@ -12,7 +12,15 @@ tokenize() {
     target=$1
     suffix=${target##*.}
     prefix=$(dirname ${target})
-    cat $target | $normalizer -l $suffix | $tokenizer -a -no-escape -l $suffix > $prefix/data.tok.$suffix
+
+    if [[ $target == *"baseline"* ]]
+    then
+        baseline=".baseline"
+    else
+        baseline=""
+    fi
+
+    cat $target | $normalizer -l $suffix | $tokenizer -a -no-escape -l $suffix > $prefix/data$baseline.tok.$suffix
 }
 
 learn_truecaser() {
@@ -24,8 +32,6 @@ learn_truecaser() {
 }
 
 apply_truecaser () {
-    echo "#### LOG" > log
-    echo $(date) >> log
     target=$1
     suffix=${target##*.}
     prefix=$(dirname ${target})
@@ -36,12 +42,15 @@ apply_truecaser () {
     else
         model=$2
     fi
-    
-    echo target: $target >> log
-    echo suffix: $suffix >> log
-    echo prefix: $prefix >> log
-    echo model: $model >> log
-    cat $target | $truecaser -model $model > $prefix/data.truecase.$suffix
+
+    if [[ $target == *"baseline"* ]]
+    then
+        baseline=".baseline"
+    else
+        baseline=""
+    fi
+
+    cat $target | $truecaser -model $model > $prefix/data$baseline.truecase.$suffix
 }
 
 learn_joint_bpe () {
@@ -57,7 +66,15 @@ learn_joint_bpe () {
     fi
     prefix=$(dirname ${target_1})
     mkdir -p $prefix/bpe
-    subword-nmt learn-joint-bpe-and-vocab --input $target_1 $target_2 -s $operations -o $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe --write-vocabulary $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe.vocab.$suffix_1 $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe.vocab.$suffix_2
+
+    if [[ $target_1 == *"baseline"* ]]
+    then
+        baseline=".baseline"
+    else
+        baseline=""
+    fi
+
+    subword-nmt learn-joint-bpe-and-vocab --input $target_1 $target_2 -s $operations -o $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe --write-vocabulary $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe.vocab.$suffix_1 $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe.vocab.$suffix_2
 }
 
 apply_bpe () {
@@ -91,7 +108,14 @@ apply_bpe () {
         target_prefix=$(dirname ${target_1})
     fi
 
-    cat $target_1 | subword-nmt apply-bpe --vocabulary $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe.vocab.$suffix_1 --vocabulary-threshold 1 -c $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe > $target_prefix/data.bpe.$lang_1
+    if [[ $6 == *"baseline"* ]] || [[ $target_1 == *"baseline"* ]]
+    then
+        baseline=".baseline"
+    else
+        baseline=""
+    fi
 
-    cat $target_2 | subword-nmt apply-bpe --vocabulary $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe.vocab.$suffix_2 --vocabulary-threshold 1 -c $prefix/bpe/vocab.$suffix_1-$suffix_2.bpe > $target_prefix/data.bpe.$lang_2
+    cat $target_1 | subword-nmt apply-bpe --vocabulary $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe.vocab.$suffix_1 --vocabulary-threshold 1 -c $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe > $target_prefix/data$baseline.bpe.$lang_1
+
+    cat $target_2 | subword-nmt apply-bpe --vocabulary $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe.vocab.$suffix_2 --vocabulary-threshold 1 -c $prefix/bpe/vocab$baseline.$suffix_1-$suffix_2.bpe > $target_prefix/data$baseline.bpe.$lang_2
 }
